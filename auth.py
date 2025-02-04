@@ -12,7 +12,7 @@ def register():
         cursor = conn.cursor()
         try:
             cursor.execute("INSERT INTO faculty (username, password_hash) VALUES (%s, %s)",
-                           (username, password))  # Store password directly (not recommended for security)
+                           (username, password)) 
             conn.commit()
             st.success("Registered Successfully! Please Login.")
         except mysql.connector.errors.IntegrityError:
@@ -36,11 +36,10 @@ def login():
         user = cursor.fetchone()
 
         if user:
-            stored_password = user[1]  # Stored password (directly in DB)
-            if password == stored_password:  # Direct password comparison
+            stored_password = user[1]  
+            if password == stored_password:  
                 st.success("Login successful")
 
-                # Redirect to attendance.py (Ensure it's in the pages/ directory)
                 st.switch_page("pages/attendance.py")
             else:
                 st.error("Invalid password")
