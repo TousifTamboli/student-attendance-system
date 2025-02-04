@@ -1,0 +1,56 @@
+# Python bytecode files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Virtual environment directory
+venv/
+env/
+.venv/
+ENV/
+
+# Streamlit configuration
+.streamlit/
+
+# MySQL database files (if any)
+*.sql
+*.db
+*.sqlite
+
+# IDE/Editor specific files
+.vscode/
+.idea/
+*.swp
+
+# Python environment files
+Pipfile
+Pipfile.lock
+requirements.txt
+
+# Operating system specific files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Coverage reports
+.coverage
+*.coveragerc
+nosetests.xml
+coverage.xml
+*.dat
+*.csv
+
+# Jupyter Notebooks checkpoints
+.ipynb_checkpoints/
+
+# Secrets and sensitive data
+*.env
+*.json
+*.yaml
+
+# Other system-specific files
+*.bak
+*.tmp
