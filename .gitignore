@@ -26,7 +26,6 @@ ENV/
 # Python environment files
 Pipfile
 Pipfile.lock
-requirements.txt
 
 # Operating system specific files
 .DS_Store
